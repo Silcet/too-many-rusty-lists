@@ -14,3 +14,5 @@ Findings about [the tutorial](https://rust-unofficial.github.io/too-many-lists/i
     - The terminal command afterwards is "lists::cargo build"
 
     - Explain the deref after accessing the peek_mut with map
+
+- __4.2__ iter: Missing tests
