@@ -72,7 +72,7 @@ impl<T> List<T> {
         let new_tail = Node::new(elem);
         match self.tail.take() {
             Some(old_tail) => {
-                old_tail.borrow_mut().prev = Some(new_tail.clone());
+                old_tail.borrow_mut().next = Some(new_tail.clone());
                 new_tail.borrow_mut().prev = Some(old_tail);
                 self.tail = Some(new_tail);
             }
